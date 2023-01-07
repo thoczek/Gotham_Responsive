@@ -728,7 +728,7 @@ Tablet
     /* position: fixed; */
     top: 65px;
     left: 0;
-    width: 100%;
+    width: 560px;
   }
 
   nav.hamburger-menu > ul > li {
@@ -839,7 +839,10 @@ Phones
 
 @media (max-width: 37em) {
   .header-wrapper {
-    min-width: 320px;
+    width: 320px;
+  }
+  input.hamburger-menu:checked ~ nav.hamburger-menu > ul {
+    width: 300px;
   }
   main {
     width: 320px;
@@ -856,8 +859,8 @@ Phones
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-.main-article {
+  }
+  .main-article {
     width: 300px;
   }
   .img-container > img {
@@ -882,10 +885,11 @@ Phones
   }
   .footer-links {
     margin-bottom: 30px;
-    width:100%;
+    width: 100%;
   }
   .footer-copyright-tablet {
     display: flex;
     width: 300px;
     flex-grow: 0;
   }
+}
